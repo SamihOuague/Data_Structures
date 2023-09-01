@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                     oo  #######  oo        */
-/*   trees.c                                           o o#########o o        */
+/*   comb_tree.c                                       o o#########o o        */
 /*                                                        ##  #  ##           */
 /*   By: SamihOuague <souaguen96@gmail.com>                ### ###            */
 /*                                                         o#####o            */
 /*   Created: 2023/08/29 18:23:01 by  SamihOuague       o o # # # o o         */
-/*   Updated: 2023/08/30 18:55:09 by souaguen           oo         oo         */
+/*   Updated: 2023/09/01 20:24:13 by anonymous          oo         oo         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+typedef struct t_tree
+{
+	struct t_tree	*tree;
+	char			*allowed;
+	char			id;
+}	t_tree;
 
 char	*remove_char(char *allowed, char c)
 {
